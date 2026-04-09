@@ -1,18 +1,26 @@
+"use client"
+import Image from "next/image"
+import { useRef } from "react"
+import { useFloatAnimation } from "../common/useFloatAnimation"
 
 const Card3 = () => {
+    const container = useRef<HTMLDivElement>(null);
+    useFloatAnimation(container);
     return (
         <div className="w-full max-w-[600px] px-4 md:px-0">
 
-            <div className="relative group flex min-h-[21rem] w-full rounded-[2rem] bg-[#6C64A8] text-white overflow-visible">
-                <div className="absolute left-[-10%] bottom-[-15%] w-[55%] h-auto z-10 select-none pointer-events-none">
-                    <img
+            <div ref={container} className="relative group flex min-h-[21rem] w-full rounded-[2rem] bg-[#6C64A8] text-white overflow-visible">
+                <div className="absolute image-main left-[-15%] bottom-[-15%] w-[60%] h-auto z-10 select-none pointer-events-none">
+                    <Image
                         src="/images/person3.png"
                         alt="person"
+                        width={500}
+                        height={500}
                         className="w-full h-full object-contain"
                     />
                 </div>
                 <div className="flex flex-col justify-center ml-auto w-[65%] md:w-[65%] pr-10 pl-4 py-8 text-right z-20">
-                    <h2 className="text-[1.5rem] lg:text-[2brem] font-bold leading-tight mb-2 font-nohemi  text-right">
+                    <h2 className="text-[1.5rem] md:text-[1.25rem] lg:text-[2brem] font-bold leading-tight mb-2 font-nohemi text-right">
                         Get Mentored & Supported
                     </h2>
                     <p className="text-[1.5rem] lg:text-[1.25rem] font-medium mb-4 leading-snug">

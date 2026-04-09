@@ -1,13 +1,22 @@
+"use client"
+import Image from "next/image";
+import { useRef } from "react";
+import { useFloatAnimation } from "../common/useFloatAnimation";
+
 const Card2 = () => {
+    const container = useRef<HTMLDivElement>(null);
+    useFloatAnimation(container);
     return (
         <div className="w-full max-w-[600px] px-4">
 
-            <div className="relative group flex min-h-[21rem] w-full rounded-[2rem] bg-[#5492A0] text-white overflow-visible">
+            <div ref={container} className="relative group flex min-h-[21rem] w-full rounded-[2rem] bg-[#5492A0] text-white overflow-visible">
 
-                <div className="absolute right-[1%] w-[45%] h-auto z-10 select-none pointer-events-none">
-                    <img
+                <div className="absolute image-main right-[1%] w-[43%] h-auto z-10 select-none pointer-events-none">
+                    <Image
                         src="/images/person2.png"
                         alt="person"
+                        width={500}
+                        height={500}
                         className="w-full h-full object-contain"
                     />
                 </div>
