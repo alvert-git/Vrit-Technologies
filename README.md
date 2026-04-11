@@ -2,7 +2,7 @@
 
 This project is a comprehensive Next.js application that showcases high-quality UI components, interactive layouts, and data-driven dashboards across three distinct tasks.
 
-## 🚀 Technologies Used
+## Technologies Used
 
 - **Framework**: Next.js 16 (App Router)
 - **Language**: TypeScript
@@ -15,7 +15,7 @@ This project is a comprehensive Next.js application that showcases high-quality 
 
 ---
 
-## 🛠️ Project Structure & Tasks
+## Project Structure & Tasks
 
 ### Task 1: SkillShikshya Journey (UI & Interactivity)
 **Objective**: Build a visually appealing landing section with custom card components and interactive states.
@@ -75,7 +75,7 @@ This project is a comprehensive Next.js application that showcases high-quality 
    npm run build
    ```
 
-## 📝 Code Review & Suggestions
+## Code Review & Suggestions
 
 ### 1. Centralized Typings 
 Currently, interfaces for `User` and `Post` are defined locally in multiple files.  
