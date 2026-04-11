@@ -1,7 +1,7 @@
 import { ArrowLeft, ArrowRight, MoveLeft, MoveRight } from "lucide-react"
 import Image from "next/image"
 
-const HoveredCard3 = ({ onPrev }) => {
+const HoveredCard3 = ({ onPrev }: { onPrev: () => void }) => {
     return (
         <div className="w-full max-w-[600px] px-4 md:px-0">
 

@@ -1,8 +1,11 @@
 import React from 'react'
+import Task1 from './task_1/page'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+      <Task1 />
+    </div>
   )
 }
 

@@ -8,7 +8,7 @@ import InteractiveCard2 from "@/components/task-1/interactive/InteractiveCard2";
 const Task1 = () => {
   return (
     <>
-      <div className="bg-white min-h-screen w-full px-6 md:pl-[7rem] md:pt-[5rem]">
+      <div className="bg-white min-h-screen w-full px-6 md:pl-[7rem] md:pt-[2rem]">
         <h2 className="text-[#414141] font-medium text-2xl mb-4">
           Your SkillShikshya Journey
         </h2>
